@@ -21,7 +21,3 @@ test:
         - npm run e2e
   artifacts:
     baseDirectory: cypress
-    configFilePath: '**/mochawesome.json'
-    files:
-      - '**/*.png'
-      - '**/*.mp4'
