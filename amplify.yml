@@ -6,7 +6,7 @@ frontend:
         - npm ci
     build:
       commands:
-        - npm run build
+        - npm run test && npm run build
   artifacts:
     baseDirectory: .next
     files:
@@ -14,10 +14,10 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-test:
-  phases:
-    test:
-      commands:
-        - npm run e2e
-  artifacts:
-    baseDirectory: cypress
+# test:
+#   phases:
+#     test:
+#       commands:
+#         - npm run e2e
+#   artifacts:
+#     baseDirectory: cypress
